@@ -332,37 +332,6 @@ Paket içinde bulunan `start-dev.cmd` dosyası backend ve frontend servislerini 
 
 > İlk çalıştırmadan önce `backend` ve `frontend` klasörlerinde `npm install` komutlarının çalıştırılmış olması gerekir.
 
-## GitHub'a Yüklemeden Önce
-
-Aşağıdaki dosyaların doğrudan repoya eklenmemesi önerilir:
-
-```gitignore
-node_modules/
-dist/
-.env
-*.log
-*.ldf
-*.mdf
-*.bak
-*.zip
-.DS_Store
-.vs/
-```
-
-Veritabanı dosyaları büyük olabileceği için GitHub reposunda doğrudan `.mdf` ve `.ldf` dosyalarını saklamak yerine aşağıdaki yöntemlerden biri tercih edilebilir:
-
-- Veritabanı oluşturma scripti paylaşmak
-- Örnek veri scripti paylaşmak
-- Büyük veritabanı dosyasını GitHub Release, bulut depolama veya Git LFS üzerinden paylaşmak
-- README içinde veritabanını nasıl attach edeceğini açıklamak
-
-## Güvenlik Notları
-
-- Gerçek `.env` dosyası GitHub'a yüklenmemelidir.
-- Veritabanı kullanıcı adı, şifre, sunucu adı veya kişisel bağlantı bilgileri public repoda paylaşılmamalıdır.
-- Ekran görüntülerinde gerçek kişisel veri varsa bulanıklaştırılmalıdır.
-- Bağlantı bilgileri için `.env.example` dosyası kullanılmalı, gerçek değerler yerel ortamda tutulmalıdır.
-
 ## Akademik Kazanımlar
 
 Bu proje aşağıdaki VTYS ve yazılım geliştirme konularını uygulamalı olarak göstermektedir:
@@ -377,16 +346,6 @@ Bu proje aşağıdaki VTYS ve yazılım geliştirme konularını uygulamalı ola
 - React tabanlı admin panel üzerinden veritabanı işlemlerini yönetme
 - Gerçekçi e-ihracat senaryolarını veritabanı sistemi üzerinde modelleme
 
-## Geliştirilebilir Yönler
-
-- Kullanıcı girişi ve rol bazlı yetkilendirme eklenmesi
-- Gelişmiş arama, filtreleme ve sıralama özellikleri
-- Sipariş detay ekranının daha kapsamlı hale getirilmesi
-- Grafik tabanlı satış, kargo ve iade raporları
-- Veritabanı kurulum scriptlerinin ayrı dosya olarak eklenmesi
-- Hata mesajlarının kullanıcı dostu Türkçe formatta iyileştirilmesi
-- Export/rapor alma özellikleri
-- API endpointleri için Swagger/OpenAPI dokümantasyonu
 
 ## Lisans
 
